@@ -1,0 +1,180 @@
+{
+  "users": [
+    {
+      "firstName": "arnav",
+      "lastName": "raj",
+      "email": "arnavraj@gmail.com",
+      "password": "Arnav@123",
+      "gender": "",
+      "age": 27,
+      "phoneNumber": "8409978804",
+      "zipCode": 56778,
+      "id": 1
+    },
+    {
+      "firstName": "Mimansa",
+      "lastName": "Saha",
+      "email": "mimansa@gmail.com",
+      "password": "Mimansa@123",
+      "gender": "",
+      "age": 22,
+      "phoneNumber": "8409978804",
+      "zipCode": 56789,
+      "id": 2
+    },
+    {
+      "firstName": "Alok",
+      "lastName": "Anand",
+      "email": "alokanand@g.com",
+      "password": "Alok@123",
+      "gender": "",
+      "age": 22,
+      "phoneNumber": "8409978804",
+      "zipCode": 54688,
+      "id": 3
+    },
+    {
+      "firstName": "Ayush",
+      "lastName": "Anand",
+      "email": "ayushanand@g.com",
+      "password": "Ayush@123",
+      "gender": "",
+      "age": 20,
+      "phoneNumber": "8409978804",
+      "zipCode": 56799,
+      "id": 4
+    },
+    {
+      "firstName": "Momy",
+      "lastName": "My love",
+      "email": "mummy@gmail.com",
+      "password": "Momy@123",
+      "gender": "2",
+      "age": 38,
+      "phoneNumber": "8936845438",
+      "zipCode": 67888,
+      "id": 5
+    },
+    {
+      "firstName": "Mam",
+      "lastName": "Ready",
+      "email": "mam@gmail.com",
+      "password": "Mam@12345",
+      "gender": "2",
+      "age": 30,
+      "phoneNumber": "8409978804",
+      "zipCode": 67387,
+      "id": 6
+    },
+    {
+      "firstName": "Manish",
+      "lastName": "Dubey",
+      "email": "manish@g.com",
+      "password": "Manish@123",
+      "gender": "",
+      "age": "25",
+      "phoneNumber": "8804556633",
+      "zipCode": 56848,
+      "id": 7
+    },
+    {
+      "firstName": "Kishan",
+      "lastName": "Kumar",
+      "email": "kishan@gmail.com",
+      "password": "Kishan@123",
+      "gender": "",
+      "age": "23",
+      "phoneNumber": "8409978804",
+      "zipCode": 54678,
+      "id": 8
+    },
+    {
+      "firstName": "Kishan",
+      "lastName": "Kumar",
+      "email": "kishan@gmail.com",
+      "password": "Kishan@123",
+      "gender": "",
+      "age": "23",
+      "phoneNumber": "8409978804",
+      "zipCode": 54678,
+      "id": 9
+    },
+    {
+      "firstName": "Aarav",
+      "lastName": "Jaiswal",
+      "email": "aarav@gmail.com",
+      "password": "Aarav@123",
+      "gender": "",
+      "age": "25",
+      "phoneNumber": "8804556644",
+      "zipCode": 56443,
+      "id": 10
+    },
+    {
+      "firstName": "Ezhil",
+      "lastName": "Ssss",
+      "email": "ezhil@gmail.com",
+      "password": "Ezhil@123",
+      "gender": "",
+      "age": "25",
+      "phoneNumber": "8409978804",
+      "zipCode": 56789,
+      "id": 11
+    },
+    {
+      "firstName": "Dimpal",
+      "lastName": "Saha",
+      "email": "dimpal@123gm.com",
+      "password": "Dimpal@123",
+      "gender": "2",
+      "age": "38",
+      "phoneNumber": "8409978804",
+      "zipCode": 56788,
+      "id": 12
+    },
+    {
+      "firstName": "Ritesh",
+      "lastName": "Raj",
+      "email": "ritesh@g.com",
+      "password": "Ritesh@123",
+      "gender": "",
+      "age": "33",
+      "phoneNumber": "8993939393",
+      "zipCode": 53332,
+      "id": 13
+    },
+    {
+      "firstName": "Shikha",
+      "lastName": "Saha",
+      "email": "sikha@gmail.com",
+      "password": "Sikha@123",
+      "gender": "2",
+      "age": "23",
+      "phoneNumber": "8936845438",
+      "zipCode": 56788,
+      "id": 14
+    },
+    {
+      "firstName": "Saurav",
+      "lastName": "Singh",
+      "email": "saurav@gmail.com",
+      "password": "Saurav@123",
+      "gender": "",
+      "age": "33",
+      "phoneNumber": "8409978804",
+      "zipCode": 56788,
+      "id": 15
+    },
+    {
+      "firstName": "Agni",
+      "lastName": "Vesh",
+      "email": "agni@gmail.com",
+      "password": "Mimansa@123",
+      "gender": "",
+      "age": "28",
+      "phoneNumber": "8409978804",
+      "zipCode": 59797,
+      "id": 16
+    }
+  ]
+}

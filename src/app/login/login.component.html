@@ -1,0 +1,15 @@
+<div class="container">
+  <form [formGroup]="loginData" (ngSubmit)="validateUser()">
+    <mat-form-field class="example-full-width" id="fName">
+        <label>Username</label>
+      <input type="email" matInput formControlName="userId" placeholder="Enter Your Email Here : ">
+    </mat-form-field><br>
+
+    <mat-form-field class="example-full-width">
+      <label>Password</label>
+      <input type="password" matInput formControlName="password" placeholder="Enter Password Here">
+    </mat-form-field><br>
+
+    <button type="submit">Submit</button>
+</form>   
+</div>

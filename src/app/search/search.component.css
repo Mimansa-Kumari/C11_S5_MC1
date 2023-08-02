@@ -1,0 +1,33 @@
+.flex
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.searchItem
+{
+    border: 1px solid grey;
+    display: inline-block;
+    box-shadow: 1px 1px 1px grey;
+}
+#text
+{
+    padding: 5px;
+    width: 200px;
+    border-color: white;
+    border: 2px solid white;
+}
+#btn
+{
+    padding: 3px;
+}
+#btn2
+{
+    padding: 3px 15px;
+    position: absolute;
+    right: 10px;
+}
+#searchLogo
+{
+    margin-bottom: -10px;
+}

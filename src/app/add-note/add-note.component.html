@@ -1,0 +1,58 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-12">
+            <!---will create button with ternary operator and click function--->
+            <button mat-fab extended (click)="onclick()" type="button" class="btn  btn-primary" id="btn">
+                <mat-icon id="icon">add</mat-icon>
+            </button>
+
+            <!--will create if condition my default it will
+              b hide on click it will toggle--->
+            <ng-container *ngIf="visible">
+                <div class="container">
+                    <div>
+                        <h1 id="appreciation">Add New Note</h1>
+                    </div>
+
+                    <form (ngSubmit)="onSubmit(feedbackForm)" #feedbackForm="ngForm">
+                        <mat-form-field class="input-field">
+                            <label for="noteTitle" id="label2">Note Title</label><br>
+                            <input type="text" required minlength="3" matInput id="noteTitle" name="noteTitle"
+                                #noteTitle="ngModel" [(ngModel)]="title"><br>
+                            <div *ngIf="noteTitle?.invalid && (noteTitle?.dirty || noteTitle?.touched)">​
+                                <div *ngIf="noteTitle.errors?.['required']">​
+                                    <p>Note Title is required​</p>
+                                </div>​
+                                <div *ngIf="noteTitle.errors?.['minlength']">​
+                                    Note Title Minimum Length is {{noteTitle.errors?.['minlength']?.requiredLength}}​
+                                </div>​
+                            </div>
+                        </mat-form-field>
+
+                        <mat-form-field class="input-field">
+                            <label id="label">Note Content</label><br>
+                            <textarea cols="70" rows="4" id="noteContent" name="noteContent" [(ngModel)]="content"
+                                #noteContent="ngModel" required minlength="5" id="text">
+                        </textarea><br>
+                            <div *ngIf="noteContent?.invalid && (noteContent?.dirty || noteContent?.touched)">​
+                                <div *ngIf="noteContent.errors?.['required']">​
+                                    <p>Note Content is required​</p>
+                                </div>​
+                                <div *ngIf="noteContent.errors?.['minlength']">​
+
+                                    <p>Note Content Minimum Length is
+                                        {{noteContent.errors?.['minlength']?.requiredLength}}​</p>
+                                </div>​
+                            </div>
+                        </mat-form-field>
+
+                        <div class="justify">
+                            <button class="btn" type="submit" [disabled]="!feedbackForm.valid"
+                                (click)="addNote()">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </ng-container>
+        </div>
+    </div>
+</div>

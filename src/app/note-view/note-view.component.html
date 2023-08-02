@@ -1,0 +1,8 @@
+<app-search (searchTextChanged)="onSearchTextChanged($event)"></app-search>
+<div class="displayFlex">
+    <app-note *ngFor="let item of items" [item]="item"></app-note>
+</div>
+<div class="setMargin">
+    <app-add-note (noteAdded)="onNoteAdded($event)"></app-add-note>
+</div>
+

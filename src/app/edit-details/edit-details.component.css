@@ -1,0 +1,17 @@
+.container
+{
+    text-align: center;
+    margin-top: 80px;
+}
+.example-full-width
+{
+    width: 400px;
+}
+button
+{
+    font-size: 17px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 2px solid white;
+    background-color:paleturquoise;
+}

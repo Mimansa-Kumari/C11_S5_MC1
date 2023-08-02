@@ -1,0 +1,33 @@
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 170px;
+    height: 230px;
+    padding: 25px;
+    border-radius: 20px;
+    margin-top: 20px;
+    box-shadow: 3px 2px 7px aqua;
+}
+
+#para {
+    font-size: 17px;
+}
+
+#date {
+    color: gray;
+    font-size: 14px;
+}
+#logo1
+{
+    color:red;
+    margin-right: 110px;
+}
+#logo2
+{
+    color: blueviolet;
+}
+a
+{
+    text-decoration: none;
+    color: black;
+}

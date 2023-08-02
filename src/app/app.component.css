@@ -1,0 +1,37 @@
+div
+{
+    text-align: center;
+    margin-top: 100px;
+}
+h1
+{
+    color: red;
+    font-size: 30px;
+    font-weight: 500;
+}
+p
+{
+    color: darkblue;
+    font-size: 20px;
+    font-weight: 500;
+}
+#look
+{
+    color:chocolate;
+}
+#logo
+{
+    color: palevioletred;
+    font-size:30px;
+}
+#clicker
+{
+    color: purple;
+}
+.link
+{
+    display: inline-block;
+    width: 120px;
+    border-radius: 25px;
+    background-color: rgb(241, 234, 234);
+}

@@ -1,0 +1,126 @@
+<div class="container">
+  <h1>Registration Form</h1>
+  <form [formGroup]="registrationData" (ngSubmit)="addUsersData()">
+    <mat-form-field class="example-full-width" id="fName">
+      <input type="text" matInput formControlName="firstNameFormControl" placeholder="First Name">
+      <mat-error *ngIf="firstNameFormControl?.errors?.['required']">
+        <p>First Name is <strong>required</strong></p>
+      </mat-error>
+    </mat-form-field>
+
+
+    <mat-form-field class="example-full-width">
+      <input type="text" matInput formControlName="lastNameFormControl" placeholder="Last Name">
+      <mat-error *ngIf="lastNameFormControl?.errors?.['minLength']">
+        <p>Last Name should have minimum of 2 Characters</p>
+      </mat-error>
+      <mat-error *ngIf="lastNameFormControl?.errors?.['required']">
+        <p>Last Name is <strong>required</strong></p>
+      </mat-error>
+    </mat-form-field><br>
+
+
+    <mat-form-field class="example-full-width" id="email">
+      <input type="text" matInput formControlName="emailFormControl" placeholder="Email">
+      <mat-error>
+        <mat-error *ngIf="emailFormControl?.errors?.['emailsAreValidCheck']===false">
+          <p>Enter Valid Email Id</p>
+        </mat-error>
+        <mat-error *ngIf="emailFormControl?.errors?.['required']">
+          <p>Email is <strong>required</strong></p>
+        </mat-error>
+      </mat-error>
+    </mat-form-field><br>
+
+
+    <mat-form-field class="example-full-width" id="pass">
+      <input type="password" matInput formControlName="passwordFormControl" placeholder="Password">
+      <mat-error *ngIf="passwordFormControl?.errors?.['required']">
+        <p>Password is <strong>required</strong></p>
+      </mat-error>
+      <mat-error *ngIf="passwordFormControl?.errors?.['pattern']">
+        <p>Password should have min 8 letters Password, with atleast a symbol,
+          upper and lower case letters and a number</p>
+      </mat-error>
+    </mat-form-field>
+
+
+    <mat-form-field class="example-full-width">
+      <input type="password" matInput formControlName="conPasswordFormControl" placeholder="Confirm Password">
+      <mat-error *ngIf="conPasswordFormControl?.errors?.['required']">
+        <p>Last Name is <strong>required</strong></p>
+      </mat-error>
+    </mat-form-field><br>
+    <mat-error *ngIf="registrationData.errors?.['mustMatch']===false" style="margin-left:300px ;margin-top: -20px;">
+      <p>Password and Confirm Password Should Match</p>
+    </mat-error>
+
+    <label>Gender</label>
+    <mat-radio-group aria-label="Select an option" formControlName="radioFormControl" id="radio">
+      <mat-radio-button value="1" [checked]="true">Male</mat-radio-button>
+      <mat-radio-button value="2">Female</mat-radio-button>
+    </mat-radio-group><br>
+
+
+
+
+    <mat-form-field class="example-full-width" id="age">
+      <input type="text" matInput formControlName="ageFormControl" placeholder="Age">
+      <mat-error>
+        <mat-error *ngIf="ageFormControl?.errors?.['required']">
+          <p>Age is <strong>required</strong></p>
+        </mat-error>
+
+        <mat-error *ngIf="ageFormControl?.errors?.['ageValidCheck']===false && ageFormControl?.dirty">
+          <p>Age must be 18 years and above</p>
+        </mat-error>
+      </mat-error>
+    </mat-form-field>
+
+
+    <mat-form-field class="example-full-width">
+      <input type="text" matInput formControlName="phoneFormControl" placeholder="Phone Number">
+      <mat-error>
+        <mat-error *ngIf="phoneFormControl?.errors?.['required']">
+          <p>Phone Number is <strong>required</strong></p>
+        </mat-error>
+        <mat-error *ngIf="phoneFormControl?.errors?.['pattern']">
+          <p>Valid Phone Number contains 10 digits starting with 7/8/9</p>
+        </mat-error>
+      </mat-error>
+    </mat-form-field><br><br>
+
+
+    <label>Address</label><br>
+    <mat-form-field class="example-full-width" id="address">
+      <input type="text" matInput formControlName="addressFormControl" placeholder="Street">
+    </mat-form-field><br>
+
+
+    <mat-form-field class="example-full-width" id="city">
+      <input type="password" matInput formControlName="address1FormControl" placeholder="City">
+    </mat-form-field>
+
+
+    <mat-form-field class="example-full-width">
+      <input type="password" matInput formControlName="address2FormControl" placeholder="State">
+    </mat-form-field><br>
+
+    <mat-form-field class="example-full-width" id="zip">
+      <input type="number" matInput formControlName="zipFormControl" placeholder="Zip Code">
+      <mat-error>
+        <mat-error *ngIf="zipFormControl?.errors?.['required']">
+          <p>Zip Code is <strong>required</strong></p>
+        </mat-error>
+        <mat-error *ngIf="zipFormControl?.errors?.['zipValidCheck']===false">
+          <p>Zip Code should be 5- or 5-digit Number</p>
+        </mat-error>
+      </mat-error>
+    </mat-form-field><br>
+
+    <button mat-raised-button color="accent" type="reset" id="reset">Reset</button>
+    <button mat-raised-button color="primary" type="submit" id="submit"
+      [disabled]="!registrationData.valid">Submit</button>
+    <!-- <button mat-raised-button color="secondary" type="button" (click)="checkLogin()">Login</button> -->
+  </form>
+</div>

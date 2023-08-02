@@ -1,0 +1,20 @@
+.container
+{
+    text-align: center;
+    margin:50px auto;
+    padding: 30px;
+    width: 400px;
+    background-color: rgb(203, 198, 198);
+    border: 2px solid gainsboro;
+}
+.example-full-width
+{
+    width: 350px;
+}
+button
+{
+    background-color: pink;
+    padding: 13px 25px;
+    border-radius: 5px;
+    font-size: 17px;
+}

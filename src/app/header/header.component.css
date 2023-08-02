@@ -1,0 +1,17 @@
+.header
+{
+    padding: 10px;
+    padding-top: 20px;
+    color: white;
+    background-color: darkblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.logos
+{
+    float: right;
+    margin-top: -40px;
+}
+#logo1,#logo2, #logo3
+{
+    padding-right: 5px;
+}

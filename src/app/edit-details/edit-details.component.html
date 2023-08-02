@@ -1,0 +1,15 @@
+<div class="container">
+    <form [formGroup]="formData" (ngSubmit)="onSubmit()">
+        <mat-form-field class="example-full-width" id="title">
+            <label>Enter Title</label>
+          <input type="text" matInput formControlName="title" placeholder="Enter the Title : " [(ngModel)]="updateData.title">
+        </mat-form-field><br>
+
+        <mat-form-field class="example-full-width" id="content">
+            <label>Enter Content</label>
+          <input type="text" matInput formControlName="content" placeholder="Enter the Content : "[(ngModel)]="updateData.content">
+        </mat-form-field><br>
+        
+        <button type="submit">Update</button>
+    </form>
+</div>

@@ -1,0 +1,14 @@
+.displayFlex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+
+
+}
+
+.setMargin {
+    margin-top: 55px;
+    display: flex;
+    justify-content: center;
+}
